@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0F0D8D2AA8A8AE006F9D89 /* PingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F0D8C2AA8A8AE006F9D89 /* PingHelper.swift */; };
 		CE4DB9842AA863FB006E0853 /* pingo.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4DB9832AA863FB006E0853 /* pingo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4DB9952AA86429006E0853 /* fping.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB98B2AA86429006E0853 /* fping.c */; };
 		CE4DB9962AA86429006E0853 /* fping.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4DB98C2AA86429006E0853 /* fping.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,7 +19,6 @@
 		CE4DB99C2AA86429006E0853 /* socket6.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB9922AA86429006E0853 /* socket6.c */; };
 		CE4DB99D2AA86429006E0853 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4DB9932AA86429006E0853 /* options.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4DB99E2AA86429006E0853 /* seqmap.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4DB9942AA86429006E0853 /* seqmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE4DB9A02AA86453006E0853 /* Pingo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB99F2AA86453006E0853 /* Pingo.swift */; };
 		CE4DB9A82AA87092006E0853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB9A72AA87092006E0853 /* AppDelegate.swift */; };
 		CE4DB9AA2AA87092006E0853 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB9A92AA87092006E0853 /* SceneDelegate.swift */; };
 		CE4DB9AC2AA87092006E0853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB9AB2AA87092006E0853 /* ViewController.swift */; };
@@ -54,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE0F0D8C2AA8A8AE006F9D89 /* PingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingHelper.swift; sourceTree = "<group>"; };
 		CE4DB9802AA863FB006E0853 /* pingo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pingo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4DB9832AA863FB006E0853 /* pingo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pingo.h; sourceTree = "<group>"; };
 		CE4DB98B2AA86429006E0853 /* fping.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fping.c; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		CE4DB9922AA86429006E0853 /* socket6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket6.c; sourceTree = "<group>"; };
 		CE4DB9932AA86429006E0853 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
 		CE4DB9942AA86429006E0853 /* seqmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seqmap.h; sourceTree = "<group>"; };
-		CE4DB99F2AA86453006E0853 /* Pingo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pingo.swift; sourceTree = "<group>"; };
 		CE4DB9A52AA87092006E0853 /* DemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4DB9A72AA87092006E0853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4DB9A92AA87092006E0853 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +120,6 @@
 			children = (
 				CE4DB98A2AA86415006E0853 /* fping */,
 				CE4DB9832AA863FB006E0853 /* pingo.h */,
-				CE4DB99F2AA86453006E0853 /* Pingo.swift */,
 			);
 			path = pingo;
 			sourceTree = "<group>";
@@ -148,6 +147,7 @@
 				CE4DB9A72AA87092006E0853 /* AppDelegate.swift */,
 				CE4DB9A92AA87092006E0853 /* SceneDelegate.swift */,
 				CE4DB9AB2AA87092006E0853 /* ViewController.swift */,
+				CE0F0D8C2AA8A8AE006F9D89 /* PingHelper.swift */,
 				CE4DB9AD2AA87092006E0853 /* Main.storyboard */,
 				CE4DB9B02AA87095006E0853 /* Assets.xcassets */,
 				CE4DB9B22AA87095006E0853 /* LaunchScreen.storyboard */,
@@ -283,7 +283,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4DB99C2AA86429006E0853 /* socket6.c in Sources */,
-				CE4DB9A02AA86453006E0853 /* Pingo.swift in Sources */,
 				CE4DB9952AA86429006E0853 /* fping.c in Sources */,
 				CE4DB99A2AA86429006E0853 /* optparse.c in Sources */,
 				CE4DB9972AA86429006E0853 /* socket4.c in Sources */,
@@ -296,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4DB9AC2AA87092006E0853 /* ViewController.swift in Sources */,
+				CE0F0D8D2AA8A8AE006F9D89 /* PingHelper.swift in Sources */,
 				CE4DB9A82AA87092006E0853 /* AppDelegate.swift in Sources */,
 				CE4DB9AA2AA87092006E0853 /* SceneDelegate.swift in Sources */,
 			);
