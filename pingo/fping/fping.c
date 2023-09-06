@@ -2107,12 +2107,14 @@ int wait_for_reply(long wait_time)
 
     /* discard reply if delay is larger than timeout
      * (see also: github #32) */
-    h->arrayOfTimes[this_count] = (this_reply / 1e+6) * 10000 ;
-    if ( h->last_resp_time < ((this_reply / 1e+6) * 10000)) {
-        h->jitter += ((this_reply / 1e+6) * 10000.0);
+    float current_time = ((this_reply / 1e+6) * 10000.0);
+    h->array_resp_times[this_count] = current_time ;
+    if ( h->last_resp_time < current_time) {
+        h->jitter += current_time - h->last_resp_time;
+    } else if ( h->last_resp_time > current_time) { // Current is bigger
+        h->jitter += h->last_resp_time - current_time;
     }
-    h->last_resp_time = (this_reply / 1e+6) * 10000;
-//    h->array_resp_times[this_count] = (this_reply / 1e+6) * 10000 ;
+    h->last_resp_time = current_time;
     if (this_reply > h->timeout) {
         return 1;
     }

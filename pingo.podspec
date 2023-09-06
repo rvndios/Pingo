@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'pingo'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A swift wrapper of fping which is a high performance ping tool with jitter'
 
   s.description      = <<-DESC

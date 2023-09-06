@@ -72,7 +72,7 @@ public class Pingo {
             while (hostPtr != nil) {
                 let h = hostPtr!.pointee
                 let host = String(cString: h.host)
-                let result = PingoResult(host: host, xmt: Int(h.num_sent), rcv: Int(h.num_recv), avg: h.num_recv > 0 ? Int(h.total_time / h.num_recv / 100) : nil, min: h.num_recv > 0 ? Int(h.min_reply / 100) : nil, max: h.num_recv > 0 ? Int(h.max_reply / 100) : nil, jitt: h.jitter)
+                let result = PingoResult(host: host, xmt: Int(h.num_sent), rcv: Int(h.num_recv), avg: h.num_recv > 0 ? Int(h.total_time / h.num_recv / 100) : nil, min: h.num_recv > 0 ? Int(h.min_reply / 100) : nil, max: h.num_recv > 0 ? Int(h.max_reply / 100) : nil, jitt: (h.jitter / Float(count) ))
                 results[host] = result
                 let freeNode = hostPtr
                 hostPtr = hostPtr?.pointee.ev_next
