@@ -11,14 +11,14 @@ A wrapper of [fping](https://github.com/schweikert/fping) which is a high perfor
 add the following line to your Podfile:
 
 ``` 
-pod "iPing"
+pod "pingo"
 ```
 
 
 ## Usage
 
 ``` swift
-import iPing
+import pingo
 
 Pingo.ping(hosts: ["zoom.com", "cnn.com", "icloud.com"], progress: { (progress) in
     print(progress)
