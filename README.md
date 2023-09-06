@@ -1,4 +1,4 @@
-# iPing
+# pingo
 
 ![Language](https://img.shields.io/badge/language-Swift%205-green.svg)
 
