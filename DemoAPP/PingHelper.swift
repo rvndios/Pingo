@@ -1,38 +1,24 @@
 //
-//  Pingo.swift
-//  iPing
+//  PingHelper.swift
+//  DemoAPP
 //
 //  Created by Aravind on 06/09/23.
 //
 
 import Foundation
+import pingo
 /// ping result
-public struct PingoResult: Codable {
-
+public struct PngResult: Codable {
     public let host: String
-
-    /// number of sent
     public let xmt: Int
-
-    /// number of received
     public let rcv: Int
-
-    /// loss percentage (value from 0-100)
     public var loss: Int {
         return xmt > 0 ? (xmt - rcv) * 100 / xmt : 0
     }
-
-    /// nil if rcv is 0
-    public let avg: Int?
-
-    /// nil if rcv is 0
+    public let avg: Float?
     public let min: Int?
-
-    /// nil if rcv is 0
     public let max: Int?
-    
     public let jitt: Float?
-
 }
 
 // Use notification for a workaround
@@ -41,19 +27,18 @@ private func progressCCallback(progress: Float) {
     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "fpingxProgress"), object: nil, userInfo: ["progress": progress])
 }
 
-public class Pingo {
-
+public class Pinger {
     /// Send ping with completion block.
     ///
     /// - Parameters:
     ///   - hosts: hosts
     ///   - backoff: default 1.5
     ///   - count: number of ping send per host
-    ///   - completion: results dictionary, the key is host string, the value is FpingxResult struct
+    ///   - completion: results dictionary, the key is host string, the value is PngResult struct
 
     public static func ping(hosts: [String], backoff: Float = 1.5, count: Int = 1,
                             progress: ((_ progress: (Float)) -> Void)? = nil,
-                            completion: @escaping (_ results: [String: PingoResult]) -> Void) {
+                            completion: @escaping (_ results: [String: PngResult]) -> Void) {
 
         let argv:[String?] = ["", "-c\(count)", "-B\(backoff)", "-q"] + hosts + [nil]
         var cargs = argv.map { $0.flatMap { UnsafeMutablePointer<Int8>(strdup($0)) } }
@@ -68,11 +53,11 @@ public class Pingo {
             let resultsArrarPtr = fping(Int32(argv.count), &cargs, progressCCallback)!
             var hostPtr = resultsArrarPtr.pointee
 
-            var results: [String: PingoResult] = [:]
+            var results: [String: PngResult] = [:]
             while (hostPtr != nil) {
                 let h = hostPtr!.pointee
                 let host = String(cString: h.host)
-                let result = PingoResult(host: host, xmt: Int(h.num_sent), rcv: Int(h.num_recv), avg: h.num_recv > 0 ? Int(h.total_time / h.num_recv / 100) : nil, min: h.num_recv > 0 ? Int(h.min_reply / 100) : nil, max: h.num_recv > 0 ? Int(h.max_reply / 100) : nil, jitt: (h.jitter / Float(count)))
+                let result = PngResult(host: host, xmt: Int(h.num_sent), rcv: Int(h.num_recv), avg: h.num_recv > 0 ? Float(h.total_time / h.num_recv / 100) : nil, min: h.num_recv > 0 ? Int(h.min_reply / 100) : nil, max: h.num_recv > 0 ? Int(h.max_reply / 100) : nil, jitt: (h.jitter / Float(count)))
                 results[host] = result
                 let freeNode = hostPtr
                 hostPtr = hostPtr?.pointee.ev_next
@@ -87,3 +72,4 @@ public class Pingo {
 
     }
 }
+

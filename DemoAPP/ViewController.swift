@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 }
 extension ViewController {
     func start() {
-        Pingo.ping(hosts: ["google.com", "cnn.com"]) { results in
+        Pinger.ping(hosts: ["google.com", "cnn.com"]) { results in
             print(results)
         }
     }
