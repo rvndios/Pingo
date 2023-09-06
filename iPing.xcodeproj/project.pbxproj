@@ -19,7 +19,39 @@
 		CE4DB99D2AA86429006E0853 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4DB9932AA86429006E0853 /* options.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4DB99E2AA86429006E0853 /* seqmap.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4DB9942AA86429006E0853 /* seqmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4DB9A02AA86453006E0853 /* Pingo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB99F2AA86453006E0853 /* Pingo.swift */; };
+		CE4DB9A82AA87092006E0853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB9A72AA87092006E0853 /* AppDelegate.swift */; };
+		CE4DB9AA2AA87092006E0853 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB9A92AA87092006E0853 /* SceneDelegate.swift */; };
+		CE4DB9AC2AA87092006E0853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB9AB2AA87092006E0853 /* ViewController.swift */; };
+		CE4DB9AF2AA87092006E0853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4DB9AD2AA87092006E0853 /* Main.storyboard */; };
+		CE4DB9B12AA87095006E0853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4DB9B02AA87095006E0853 /* Assets.xcassets */; };
+		CE4DB9B42AA87095006E0853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4DB9B22AA87095006E0853 /* LaunchScreen.storyboard */; };
+		CE4DB9BA2AA871D7006E0853 /* iPing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4DB9802AA863FB006E0853 /* iPing.framework */; };
+		CE4DB9BB2AA871D7006E0853 /* iPing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE4DB9802AA863FB006E0853 /* iPing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE4DB9BC2AA871D7006E0853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE4DB9772AA863FA006E0853 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE4DB97F2AA863FB006E0853;
+			remoteInfo = iPing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE4DB9BE2AA871D7006E0853 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE4DB9BB2AA871D7006E0853 /* iPing.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE4DB9802AA863FB006E0853 /* iPing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iPing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +67,14 @@
 		CE4DB9932AA86429006E0853 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
 		CE4DB9942AA86429006E0853 /* seqmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seqmap.h; sourceTree = "<group>"; };
 		CE4DB99F2AA86453006E0853 /* Pingo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pingo.swift; sourceTree = "<group>"; };
+		CE4DB9A52AA87092006E0853 /* DemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4DB9A72AA87092006E0853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE4DB9A92AA87092006E0853 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE4DB9AB2AA87092006E0853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE4DB9AE2AA87092006E0853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE4DB9B02AA87095006E0853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE4DB9B32AA87095006E0853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE4DB9B52AA87095006E0853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +85,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE4DB9A22AA87092006E0853 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4DB9BA2AA871D7006E0853 /* iPing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,7 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				CE4DB9822AA863FB006E0853 /* iPing */,
+				CE4DB9A62AA87092006E0853 /* DemoAPP */,
 				CE4DB9812AA863FB006E0853 /* Products */,
+				CE4DB9B92AA871D7006E0853 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				CE4DB9802AA863FB006E0853 /* iPing.framework */,
+				CE4DB9A52AA87092006E0853 /* DemoAPP.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +140,27 @@
 				CE4DB9922AA86429006E0853 /* socket6.c */,
 			);
 			path = fping;
+			sourceTree = "<group>";
+		};
+		CE4DB9A62AA87092006E0853 /* DemoAPP */ = {
+			isa = PBXGroup;
+			children = (
+				CE4DB9A72AA87092006E0853 /* AppDelegate.swift */,
+				CE4DB9A92AA87092006E0853 /* SceneDelegate.swift */,
+				CE4DB9AB2AA87092006E0853 /* ViewController.swift */,
+				CE4DB9AD2AA87092006E0853 /* Main.storyboard */,
+				CE4DB9B02AA87095006E0853 /* Assets.xcassets */,
+				CE4DB9B22AA87095006E0853 /* LaunchScreen.storyboard */,
+				CE4DB9B52AA87095006E0853 /* Info.plist */,
+			);
+			path = DemoAPP;
+			sourceTree = "<group>";
+		};
+		CE4DB9B92AA871D7006E0853 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +200,25 @@
 			productReference = CE4DB9802AA863FB006E0853 /* iPing.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		CE4DB9A42AA87092006E0853 /* DemoAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4DB9B62AA87095006E0853 /* Build configuration list for PBXNativeTarget "DemoAPP" */;
+			buildPhases = (
+				CE4DB9A12AA87092006E0853 /* Sources */,
+				CE4DB9A22AA87092006E0853 /* Frameworks */,
+				CE4DB9A32AA87092006E0853 /* Resources */,
+				CE4DB9BE2AA871D7006E0853 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4DB9BD2AA871D7006E0853 /* PBXTargetDependency */,
+			);
+			name = DemoAPP;
+			productName = DemoAPP;
+			productReference = CE4DB9A52AA87092006E0853 /* DemoAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -135,11 +226,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					CE4DB97F2AA863FB006E0853 = {
 						CreatedOnToolsVersion = 14.2;
 						LastSwiftMigration = 1420;
+					};
+					CE4DB9A42AA87092006E0853 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
@@ -157,6 +252,7 @@
 			projectRoot = "";
 			targets = (
 				CE4DB97F2AA863FB006E0853 /* iPing */,
+				CE4DB9A42AA87092006E0853 /* DemoAPP */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +262,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4DB9A32AA87092006E0853 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4DB9B42AA87095006E0853 /* LaunchScreen.storyboard in Resources */,
+				CE4DB9B12AA87095006E0853 /* Assets.xcassets in Resources */,
+				CE4DB9AF2AA87092006E0853 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +291,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE4DB9A12AA87092006E0853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4DB9AC2AA87092006E0853 /* ViewController.swift in Sources */,
+				CE4DB9A82AA87092006E0853 /* AppDelegate.swift in Sources */,
+				CE4DB9AA2AA87092006E0853 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE4DB9BD2AA871D7006E0853 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE4DB97F2AA863FB006E0853 /* iPing */;
+			targetProxy = CE4DB9BC2AA871D7006E0853 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE4DB9AD2AA87092006E0853 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4DB9AE2AA87092006E0853 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE4DB9B22AA87095006E0853 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4DB9B32AA87095006E0853 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE4DB9852AA863FB006E0853 /* Debug */ = {
@@ -306,6 +449,7 @@
 		CE4DB9882AA863FB006E0853 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -327,6 +471,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -Wno-error=non-modular-include-in-framework-module";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iping.iPing;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
@@ -342,6 +487,7 @@
 		CE4DB9892AA863FB006E0853 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -363,6 +509,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -Wno-error=non-modular-include-in-framework-module";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iping.iPing;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
@@ -371,6 +518,65 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE4DB9B72AA87095006E0853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoAPP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iping.DemoAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE4DB9B82AA87095006E0853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoAPP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iping.DemoAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -391,6 +597,15 @@
 			buildConfigurations = (
 				CE4DB9882AA863FB006E0853 /* Debug */,
 				CE4DB9892AA863FB006E0853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4DB9B62AA87095006E0853 /* Build configuration list for PBXNativeTarget "DemoAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4DB9B72AA87095006E0853 /* Debug */,
+				CE4DB9B82AA87095006E0853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
