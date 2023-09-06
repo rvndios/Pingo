@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import iPing
+import pingo
 
 class ViewController: UIViewController {
 
