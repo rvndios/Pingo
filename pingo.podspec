@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'iPing'
+  s.name             = 'pingo'
   s.version          = '1.0.0'
   s.summary          = 'A swift wrapper of fping which is a high performance ping tool with jitter'
 
@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
   s.osx.deployment_target = '10.13'
 
-  s.source_files = 'iPing/Pingo.swift', 'iPing/iPing.h', 'fping/*'
-  s.public_header_files = 'iPing/iPing.h', 'fping/*.h'
+  s.source_files = 'iPing/Pingo.swift', 'iPing/iPing.h', 'iPing/fping/*'
+  s.public_header_files = 'iPing/iPing.h', 'iPing/fping/*.h'
   
   s.frameworks = 'Foundation'
 
