@@ -1,4 +1,4 @@
-# EasyPing
+# iPing
 
 ![Language](https://img.shields.io/badge/language-Swift%205-green.svg)
 
@@ -18,7 +18,7 @@ pod "iPing"
 ## Usage
 
 ``` swift
-import EasyPing
+import iPing
 
 Pingo.ping(hosts: ["zoom.com", "cnn.com", "icloud.com"], progress: { (progress) in
     print(progress)
@@ -29,12 +29,12 @@ Pingo.ping(hosts: ["zoom.com", "cnn.com", "icloud.com"], progress: { (progress) 
 
 The `progress` is a float number between 0-1.
 
-The `result` is a dictionary which key is host string, value is `FpingxResult`.
+The `result` is a dictionary which key is host string, value is `PingoResult`.
 
 Notice that FpingxResult is a struct defined as:
 
 ``` swift
-public struct FpingxResult {
+public struct PingoResult {
 
     public let host: String
 
