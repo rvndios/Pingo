@@ -2107,6 +2107,7 @@ int wait_for_reply(long wait_time)
 
     /* discard reply if delay is larger than timeout
      * (see also: github #32) */
+    h->arrayOfTimes[this_count] = (this_reply / 1e+6) * 10000 ;
     if ( h->last_resp_time < ((this_reply / 1e+6) * 10000)) {
         h->jitter += ((this_reply / 1e+6) * 10000.0);
     }

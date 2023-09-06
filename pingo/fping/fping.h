@@ -47,6 +47,7 @@ typedef struct host_entry {
     int* resp_times; /* individual response times */
     float last_resp_time; /* last response time for jitter calc */
     float jitter; /* jitter value */
+    float arrayOfTimes[3];  /* For jitter calc - max 10*/
 #if defined(DEBUG) || defined(_DEBUG)
     int* sent_times; /* per-sent-ping timestamp */
 #endif /* DEBUG || _DEBUG */

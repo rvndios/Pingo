@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE4DB9842AA863FB006E0853 /* iPing.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4DB9832AA863FB006E0853 /* iPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE4DB9842AA863FB006E0853 /* pingo.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4DB9832AA863FB006E0853 /* pingo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4DB9952AA86429006E0853 /* fping.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB98B2AA86429006E0853 /* fping.c */; };
 		CE4DB9962AA86429006E0853 /* fping.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4DB98C2AA86429006E0853 /* fping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4DB9972AA86429006E0853 /* socket4.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4DB98D2AA86429006E0853 /* socket4.c */; };
@@ -25,8 +25,8 @@
 		CE4DB9AF2AA87092006E0853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4DB9AD2AA87092006E0853 /* Main.storyboard */; };
 		CE4DB9B12AA87095006E0853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4DB9B02AA87095006E0853 /* Assets.xcassets */; };
 		CE4DB9B42AA87095006E0853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4DB9B22AA87095006E0853 /* LaunchScreen.storyboard */; };
-		CE4DB9BA2AA871D7006E0853 /* iPing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4DB9802AA863FB006E0853 /* iPing.framework */; };
-		CE4DB9BB2AA871D7006E0853 /* iPing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE4DB9802AA863FB006E0853 /* iPing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE4DB9BA2AA871D7006E0853 /* pingo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4DB9802AA863FB006E0853 /* pingo.framework */; };
+		CE4DB9BB2AA871D7006E0853 /* pingo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE4DB9802AA863FB006E0853 /* pingo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE4DB9BB2AA871D7006E0853 /* iPing.framework in Embed Frameworks */,
+				CE4DB9BB2AA871D7006E0853 /* pingo.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,8 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CE4DB9802AA863FB006E0853 /* iPing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iPing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE4DB9832AA863FB006E0853 /* iPing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iPing.h; sourceTree = "<group>"; };
+		CE4DB9802AA863FB006E0853 /* pingo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pingo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4DB9832AA863FB006E0853 /* pingo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pingo.h; sourceTree = "<group>"; };
 		CE4DB98B2AA86429006E0853 /* fping.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fping.c; sourceTree = "<group>"; };
 		CE4DB98C2AA86429006E0853 /* fping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fping.h; sourceTree = "<group>"; };
 		CE4DB98D2AA86429006E0853 /* socket4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket4.c; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE4DB9BA2AA871D7006E0853 /* iPing.framework in Frameworks */,
+				CE4DB9BA2AA871D7006E0853 /* pingo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 		CE4DB9762AA863FA006E0853 = {
 			isa = PBXGroup;
 			children = (
-				CE4DB9822AA863FB006E0853 /* iPing */,
+				CE4DB9822AA863FB006E0853 /* pingo */,
 				CE4DB9A62AA87092006E0853 /* DemoAPP */,
 				CE4DB9812AA863FB006E0853 /* Products */,
 				CE4DB9B92AA871D7006E0853 /* Frameworks */,
@@ -109,20 +109,20 @@
 		CE4DB9812AA863FB006E0853 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE4DB9802AA863FB006E0853 /* iPing.framework */,
+				CE4DB9802AA863FB006E0853 /* pingo.framework */,
 				CE4DB9A52AA87092006E0853 /* DemoAPP.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE4DB9822AA863FB006E0853 /* iPing */ = {
+		CE4DB9822AA863FB006E0853 /* pingo */ = {
 			isa = PBXGroup;
 			children = (
 				CE4DB98A2AA86415006E0853 /* fping */,
-				CE4DB9832AA863FB006E0853 /* iPing.h */,
+				CE4DB9832AA863FB006E0853 /* pingo.h */,
 				CE4DB99F2AA86453006E0853 /* Pingo.swift */,
 			);
-			path = iPing;
+			path = pingo;
 			sourceTree = "<group>";
 		};
 		CE4DB98A2AA86415006E0853 /* fping */ = {
@@ -172,7 +172,7 @@
 			files = (
 				CE4DB99B2AA86429006E0853 /* config.h in Headers */,
 				CE4DB99D2AA86429006E0853 /* options.h in Headers */,
-				CE4DB9842AA863FB006E0853 /* iPing.h in Headers */,
+				CE4DB9842AA863FB006E0853 /* pingo.h in Headers */,
 				CE4DB99E2AA86429006E0853 /* seqmap.h in Headers */,
 				CE4DB9962AA86429006E0853 /* fping.h in Headers */,
 				CE4DB9992AA86429006E0853 /* optparse.h in Headers */,
@@ -182,9 +182,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CE4DB97F2AA863FB006E0853 /* iPing */ = {
+		CE4DB97F2AA863FB006E0853 /* pingo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE4DB9872AA863FB006E0853 /* Build configuration list for PBXNativeTarget "iPing" */;
+			buildConfigurationList = CE4DB9872AA863FB006E0853 /* Build configuration list for PBXNativeTarget "pingo" */;
 			buildPhases = (
 				CE4DB97B2AA863FB006E0853 /* Headers */,
 				CE4DB97C2AA863FB006E0853 /* Sources */,
@@ -195,9 +195,9 @@
 			);
 			dependencies = (
 			);
-			name = iPing;
+			name = pingo;
 			productName = iPing;
-			productReference = CE4DB9802AA863FB006E0853 /* iPing.framework */;
+			productReference = CE4DB9802AA863FB006E0853 /* pingo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CE4DB9A42AA87092006E0853 /* DemoAPP */ = {
@@ -238,7 +238,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE4DB97A2AA863FA006E0853 /* Build configuration list for PBXProject "iPing" */;
+			buildConfigurationList = CE4DB97A2AA863FA006E0853 /* Build configuration list for PBXProject "pingo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -251,7 +251,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE4DB97F2AA863FB006E0853 /* iPing */,
+				CE4DB97F2AA863FB006E0853 /* pingo */,
 				CE4DB9A42AA87092006E0853 /* DemoAPP */,
 			);
 		};
@@ -306,7 +306,7 @@
 /* Begin PBXTargetDependency section */
 		CE4DB9BD2AA871D7006E0853 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE4DB97F2AA863FB006E0853 /* iPing */;
+			target = CE4DB97F2AA863FB006E0853 /* pingo */;
 			targetProxy = CE4DB9BC2AA871D7006E0853 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -583,7 +583,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE4DB97A2AA863FA006E0853 /* Build configuration list for PBXProject "iPing" */ = {
+		CE4DB97A2AA863FA006E0853 /* Build configuration list for PBXProject "pingo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE4DB9852AA863FB006E0853 /* Debug */,
@@ -592,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE4DB9872AA863FB006E0853 /* Build configuration list for PBXNativeTarget "iPing" */ = {
+		CE4DB9872AA863FB006E0853 /* Build configuration list for PBXNativeTarget "pingo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE4DB9882AA863FB006E0853 /* Debug */,

@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
   s.osx.deployment_target = '10.13'
 
-  s.source_files = 'iPing/Pingo.swift', 'iPing/iPing.h', 'iPing/fping/*'
-  s.public_header_files = 'iPing/iPing.h', 'iPing/fping/*.h'
+  s.source_files = 'pingo/Pingo.swift', 'pingo/pingo.h', 'pingo/fping/*'
+  s.public_header_files = 'pingo/pingo.h', 'pingo/fping/*.h'
   
   s.frameworks = 'Foundation'
 
