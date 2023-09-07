@@ -2109,11 +2109,14 @@ int wait_for_reply(long wait_time)
      * (see also: github #32) */
     float current_time = ((this_reply / 1e+6) * 10000.0);
     h->array_resp_times[this_count] = current_time ;
-    if ( h->last_resp_time < current_time) {
-        h->jitter += current_time - h->last_resp_time;
-    } else if ( h->last_resp_time > current_time) { // Current is bigger
-        h->jitter += h->last_resp_time - current_time;
+    if (h->last_resp_time > 0.0) {
+        if (h->last_resp_time < current_time) {
+            h->jitter += current_time - h->last_resp_time;
+        } else if ( h->last_resp_time > current_time) { // Current is bigger
+            h->jitter += h->last_resp_time - current_time;
+        }
     }
+   
     h->last_resp_time = current_time;
     if (this_reply > h->timeout) {
         return 1;
