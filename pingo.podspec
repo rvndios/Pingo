@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/rvndios/iPing'
   s.license          = { :type => 'BSD', :file => 'LICENSE' }
   s.author           = { 'Aravind' => 'aravindscs@gmail.com' }
-  s.source           = { :git => 'https://github.com/rvndios/iPing.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/rvndios/pingo.git', :tag => s.version.to_s }
   s.social_media_url = ''
   s.platform         = :ios, :osx
   s.swift_version = '5.2'
